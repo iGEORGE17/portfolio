@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="">
             <div className="avatar">
                 <div className="lg:w-80 w-48 rounded-full shadow-lg shadow-primary">
-                    <img src="/me.jpg" />
+                    <Image src="/me.jpg" alt="profile picture" width={360} height={651}/>
                 </div>
             </div>        
         </div>        
