@@ -17,10 +17,15 @@ const Header = () => {
             </div>
             <Link href="/" className="normal-case text-xl text-primary font-bold">PORTFOLIO</Link>
         </div>
-        <div className="navbar-end hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+        <div className=" hidden lg:flex">
+            <ul className="menu menu-horizontal px-1 font-medium">
             <li><Link href="./">Home</Link></li>
             <li><Link href="#projects">Projects</Link></li>
+            <li><Link href="#projects">Experience</Link></li>
+            <li><Link href="#projects">Education</Link></li>
+            <li><Link href="#projects">Certification</Link></li>
+            <li><Link href="#projects">Interest & Hobbies</Link></li>
+            <li><Link href="#contact">Contact</Link></li>
             </ul>
         </div>
         </div>

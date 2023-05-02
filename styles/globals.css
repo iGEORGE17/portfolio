@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h3 {
+        @apply font-headers;
+    }
+    body {
+        @apply font-content;
+    }
+}
+
 
 #content::-webkit-scrollbar {
     display: none;
