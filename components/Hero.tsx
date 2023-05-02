@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="">
             <div className="avatar">
                 <div className="lg:w-80 w-48 rounded-full shadow-lg shadow-primary">
-                    <Image src="/me.jpg" alt="profile picture" width={360} height={651}/>
+                    <Image src="/me.jpg" alt="profile picture" width="360" height="651" />
                 </div>
             </div>        
         </div>        
@@ -24,11 +24,9 @@ const Hero = () => {
                 <div className="flex justify-between items-center">
                     <button className="btn gap-2">
                         Button
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                     </button>
                     <button className="btn gap-2">
                         Button
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                     </button>
                 </div>                
             </div>
