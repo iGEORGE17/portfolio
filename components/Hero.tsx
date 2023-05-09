@@ -36,9 +36,7 @@ const Hero = () => {
           animate={{ y:0, opacity: 1 }}
           transition={{ duration:0.5, delay: 1.5 }}
            className="text-xl flex justify-center px-5 lg:px-0">
-                    Looking for a challenging role in a reputable organization to utilize my technical, 
-                    database, and management skills for the growth of the organization 
-                    as well as to enhance my knowledge about new and emerging trends in the IT sector                
+                    I'm a product driven software developer currently based in Nigeria. I'm very passionate and dedicated to my work               
                 </motion.p>
             <ul className="menu menu-horizontal bg-ghost rounded-box lg:hidden">
               <li>
@@ -54,14 +52,14 @@ const Hero = () => {
                 <Link href="https://www.github.com/igeorge"><FaGithub className='text-2xl' /></Link>
               </li>              
             </ul>                
-                <div className="flex justify-between items-center gap-6">
+                {/* <div className="flex justify-between items-center gap-6">
                     <button className="btn gap-2 ">
                         Download Resume <BsFiletypePdf />
                     </button>
                     <button className="btn gap-2">
                         Button
                     </button>
-                </div>                
+                </div>                 */}
             </div>
         </div>
     </div>
