@@ -1,5 +1,6 @@
 import {BiBriefcaseAlt, BiSupport} from "react-icons/bi"
 import {BsBarChart, BsFiletypePdf} from "react-icons/bs"
+import Image from "next/image"
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
         <div className="self-center">
             <div className="avatar">
             <div className="w-80 h-full rounded-xl">
-                <img src="/me.jpg" />
+                <Image src="/me.jpg" width="80" height="80" alt="" />
             </div>
             </div>
         </div>
