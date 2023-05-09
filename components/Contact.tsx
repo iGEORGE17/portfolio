@@ -49,7 +49,7 @@ const Contact = () => {
                         <div className="form-control">
                         <input type="email" placeholder="Enter your email" className="input input-bordered" />
                         </div>                        
-                        <textarea className="textarea textarea-bordered" placeholder="Message" rows="8"></textarea>
+                        <textarea className="textarea textarea-bordered lg:min-h-[300px]" placeholder="Message"></textarea>
                         <div className="">
                             <button className="btn btn-primary gap-2">SEND
                             <SiMinutemailer className="lg:text-2xl" />
