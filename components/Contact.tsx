@@ -6,9 +6,9 @@ import {BsWhatsapp} from "react-icons/bs"
 const Contact = () => {
   return (
     <div className="w-full lg:flex lg:flex-col lg:space-y-10">
-        <div className="lg:flex lg:justify-start gap-3 lg:items-center">
-            <h1 className="lg:text-4xl">Get In Touch</h1>
-            <div className="w-[200px] h-[2px] bg-primary"></div>
+        <div className="lg:flex lg:justify-start gap-3 lg:items-center flex justify-center">
+            <h1 className="lg:text-4xl text-4xl font-bold py-5">Get In Touch</h1>
+            <div className="w-[200px] h-[2px] bg-primary hidden lg:block"></div>
         </div>
         <div className="lg:flex lg:justify-between lg:items-center lg:mx-[100px] space-y-9 mx-5">
             <div className="lg:flex lg:flex-col space-y-3">

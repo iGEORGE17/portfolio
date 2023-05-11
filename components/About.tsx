@@ -6,9 +6,9 @@ import Link from "next/link"
 const About = () => {
   return (
   <div className="w-full lg:flex lg:flex-col lg:justify-start lg:items-start lg:space-y-7">
-      <div className="hidden lg:flex xs:flex lg:justify-start xs:justify-center gap-3 lg:items-center">
-        <h1 className="lg:text-4xl">About Me</h1>
-        <div className="w-[200px] h-[2px] bg-primary"></div>
+      <div className="lg:flex xs:flex lg:justify-start flex justify-center gap-3 lg:items-center">
+        <h1 className="lg:text-4xl text-4xl font-bold py-5">About Me</h1>
+        <div className="w-[200px] h-[2px] bg-primary hidden lg:block"></div>
       </div> 
       <div className="flex flex-col items-center lg:flex-row lg:justify-between justify-center lg:items-start lg:mx-[200px] gap-10">
         <div className="">
@@ -59,7 +59,7 @@ const About = () => {
                  I have years of experience and i keep up with the latest technologies.
                  </p>
                 <div className="">
-                    <Link href="/resume.pdf" className="btn gap-2 btn-primary" download="Resume.pdf">
+                    <Link href="/resume.pdf" target="_blank" className="btn gap-2 btn-primary" download="Resume.pdf">
                         Download Resume <BsFiletypePdf />
                     </Link>
                 </div>            

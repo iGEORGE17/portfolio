@@ -42,9 +42,6 @@ export default function Home() {
                 <Link href='#projects'><GrFolderOpen className='lg:text-2xl' /> </Link>
               </li>
               <li>
-                <Link href="/"><TbSchool className='lg:text-2xl' /></Link>
-              </li>
-              <li>
                 <Link href="#contact"><GrContactInfo className='lg:text-2xl' /></Link>
               </li>              
             </ul> 
