@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="">
             <div className="avatar">
                 <div className="lg:w-80 w-48 rounded-full shadow-lg shadow-primary">
-                    <Image src="/me.jpg" alt="profile picture" width="360" height="651" />
+                    <Image src="/me.jpg" alt="profile picture" width={360} height={651} />
                 </div>
             </div>        
         </div>        
@@ -52,14 +52,6 @@ const Hero = () => {
                 <Link href="https://www.github.com/igeorge"><FaGithub className='text-2xl' /></Link>
               </li>              
             </ul>                
-                {/* <div className="flex justify-between items-center gap-6">
-                    <button className="btn gap-2 ">
-                        Download Resume <BsFiletypePdf />
-                    </button>
-                    <button className="btn gap-2">
-                        Button
-                    </button>
-                </div>                 */}
             </div>
         </div>
     </div>
