@@ -50,16 +50,16 @@ export default function Home() {
             </ul> 
           </motion.div>
             <div className="lg:h-screen lg:overflow-y-scroll py-7" id="content">
-              <section id="hero" className='lg:h-[100vh] min-h-[100vh] flex lg:flex justify-center items-center'>
+              <section id="hero" className='lg:h-[100vh] min-h-[100vh] overflow-y-auto flex lg:flex justify-center items-center'>
                 <Hero />
               </section>
-              <section id="about" className='lg:h-[100vh] min-h-[100vh] lg:flex lg:justify-center lg:items-center'>
+              <section id="about" className='lg:h-[100vh] min-h-[100vh] overflow-y-auto lg:flex lg:justify-center lg:items-center'>
                 <About />
               </section>              
               <section id="projects" className='lg:h-[100vh] min-h-[100vh] overflow-y-auto lg:flex lg:justify-center lg:items-center'>
                 <Projects />
               </section> 
-              <section id="contact" className='lg:h-[100vh] min-h-[100vh] lg:flex lg:justify-center lg:items-center'>
+              <section id="contact" className='lg:h-[100vh] min-h-[100vh] overflow-y-auto lg:flex lg:justify-center lg:items-center'>
                 <Contact />
               </section>                       
           </div>
