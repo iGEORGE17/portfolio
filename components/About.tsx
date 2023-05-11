@@ -19,7 +19,7 @@ const About = () => {
             </div>
         </div>
         <div className="lg:flex lg:flex-col gap-3">
-            <div className="flex flex-wrap lg:justify-between lg:items-center gap-2">
+            <div className="flex flex-wrap lg:flex-nowrap lg:justify-between lg:items-center gap-2">
                 <div className="card w-64 bg-base-100 shadow-sm">
                 <div className="card-body">
                     <div className="lg:flex lg:flex-col lg:items-center">
