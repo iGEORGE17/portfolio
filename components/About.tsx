@@ -19,11 +19,11 @@ const About = () => {
             </div>
         </div>
         <div className="lg:flex lg:flex-col gap-3">
-            <div className="flex flex-wrap lg:flex-nowrap lg:justify-between lg:items-center gap-2">
+            <div className="lg:flex flex flex-wrap lg:flex-nowrap lg:justify-between lg:items-center lg:gap-2 gap-1">
                 <div className="card w-64 bg-base-100 shadow-sm">
                 <div className="card-body">
-                    <div className="lg:flex lg:flex-col lg:items-center">
-                        <BsBarChart className="lg:text-4xl" />
+                    <div className="lg:flex lg:flex-col lg:items-center flex flex-col items-center">
+                        <BsBarChart className="lg:text-4xl text-3xl" />
                         <h2 className="card-title">Experience</h2>
                         <p>4+ working</p>
                     </div>
@@ -32,8 +32,8 @@ const About = () => {
 
                 <div className="card w-64 bg-base-100 shadow-sm">
                 <div className="card-body">
-                    <div className="lg:flex lg:flex-col lg:items-center">
-                        <BiBriefcaseAlt className="lg:text-4xl" />
+                    <div className="lg:flex lg:flex-col lg:items-center flex flex-col items-center">
+                        <BiBriefcaseAlt className="lg:text-4xl text-3xl" />
                         <h2 className="card-title">Projects</h2>
                         <p>4 completed</p>
                     </div>
@@ -42,8 +42,8 @@ const About = () => {
 
                 <div className="card w-64 bg-base-100 shadow-sm">
                 <div className="card-body">
-                    <div className="lg:flex lg:flex-col lg:items-center">
-                        <BiSupport className="lg:text-4xl" />
+                    <div className="lg:flex lg:flex-col lg:items-center flex flex-col items-center">
+                        <BiSupport className="lg:text-4xl text-3xl"/>
                         <h2 className="card-title">Support</h2>
                         <p>Online 24/7</p>
                     </div>
