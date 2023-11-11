@@ -7,9 +7,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      headers: ["Monofett", "cursive"],
-      content: ["Poppins", "sans serif"]
-
+      headers: ["Poppins", "sans serif"],
+      content: ["Poppins", "sans serif"],
     },
     extend: {},
   },

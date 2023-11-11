@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    h3 {
+    h1, h3 {
         @apply font-headers;
     }
     body {
@@ -11,10 +11,18 @@
     }
 }
 
-
 #content::-webkit-scrollbar {
     display: none;
 }
+
+
+body {
+    overflow: hidden;
+}
+
+
+
+
 
 /* body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

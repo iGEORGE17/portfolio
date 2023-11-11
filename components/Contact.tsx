@@ -1,6 +1,6 @@
 import {SiMinutemailer} from "react-icons/si"
 import {HiOutlineMail} from "react-icons/hi"
-import {BsWhatsapp} from "react-icons/bs"
+import {TfiSkype} from "react-icons/tfi"
 
 
 const Contact = () => {
@@ -28,10 +28,10 @@ const Contact = () => {
                 <div className="card-body">
                     <div className="lg:flex lg:justify-start lg:items-center gap-3 flex flex-col items-center">
                         <div className="lg:flex lg:justify-center lg:items-center flex flex-col items-center gap-1">
-                            <BsWhatsapp className="lg:text-2xl text-4xl"/>
-                            <p className="lg:font-bold font-bold">Whatsapp</p>
+                            <TfiSkype className="lg:text-2xl text-4xl"/>
+                            <p className="lg:font-bold font-bold">Skype</p>
                         </div>
-                        <p>+2349076840990</p>
+                        <p>+2349039462400</p>
                     </div>
                 </div>
                 </div>                        

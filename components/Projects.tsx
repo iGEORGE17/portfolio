@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi"
@@ -29,11 +30,11 @@ const Projects = () => {
                 <h2 className="card-title">Gameco</h2>
                 <div className="lg:flex lg:items-center lg:justify-between lg:space-x-3 flex space-x-3">
                   <Link href="https://github.com/iGEORGE17/gameco" target="_blank"><FaGithub className="text-2xl" /></Link>
-                  <Link href="" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
+                  <Link href="https://gameco.netlify.app" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
                 </div> 
               </div>
-                <p>A game listing application that renders a list of games from an external api with search and sort functionality</p>  
-                </div>          
+               <p>A game listing application that renders a list of games from an external api with search and sort functionality</p>  
+                </div>         
             </div>
 
             <div className="card card-compact w-full bg-base-100 shadow-xl">
@@ -73,7 +74,20 @@ const Projects = () => {
                 </div>              
                 <p>a react application that displays random quotes with different background colors</p>
             </div>
-            </div>            
+            </div> 
+
+            <div className="card card-compact w-full bg-base-100 shadow-xl">
+            <div className="card-body">
+              <div className="lg:flex justify-between items-center flex">
+                <h2 className="card-title">X clone Mobile App</h2>
+                <div className="lg:flex lg:items-center lg:justify-between lg:space-x-3 flex space-x-3">
+                  <Link href="https://github.com/iGEORGE17/random-quote-machine" target="_blank"><FaGithub className="text-2xl" /></Link>
+                  <Link href="https://igeorge17.github.io/random-quote-machine" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
+                </div>  
+                </div>              
+                <p>a reactnative expo application built with passwordless authentication</p>
+            </div>
+            </div>                       
 
         </div>
       </div>
