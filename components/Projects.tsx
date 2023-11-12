@@ -17,7 +17,7 @@ const Projects = () => {
                 <h2 className="card-title">Noteyy</h2>
                 <div className="lg:flex lg:items-center lg:justify-between lg:space-x-3 flex space-x-3">
                   <Link href="https://github.com/iGEORGE17/notetaker" target="_blank"><FaGithub className="text-2xl" /></Link>
-                  <Link href="" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
+                  <Link href="#" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
                 </div>                
               </div>                
                 <p>A notes writing application built with Nexjs, react, typescript, prisma, tRPC and supabase with next-Auth google login</p>
@@ -43,7 +43,7 @@ const Projects = () => {
                 <h2 className="card-title">whatsapp clone</h2>
                 <div className="lg:flex lg:items-center lg:justify-between lg:space-x-3 flex space-x-3">
                   <Link href="https://github.com/iGEORGE17/whatsapp-clone-with-flutter" target="_blank"><FaGithub className="text-2xl" /></Link>
-                  <Link target="_blank" href=""><FiExternalLink className="lg:text-xl text-2xl" /></Link>
+                  <Link target="_blank" href="#"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
                 </div>   
                 </div>             
                 <p>a whatsapp clone mobile application using react-native</p>
@@ -56,7 +56,7 @@ const Projects = () => {
                 <h2 className="card-title">Tesla clone</h2>
                 <div className="lg:flex lg:items-center lg:justify-between lg:space-x-3 flex space-x-3">
                   <Link href="https://github.com/iGEORGE17/Tesla-Clone-with-React-Native" target="_blank"><FaGithub className="text-2xl" /></Link>
-                  <Link href="" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
+                  <Link href="#" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
                 </div>  
                 </div>              
                 <p>a tesla clone mobile application using flutter</p>

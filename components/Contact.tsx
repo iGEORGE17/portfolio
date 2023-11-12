@@ -1,6 +1,8 @@
 import {SiMinutemailer} from "react-icons/si"
 import {HiOutlineMail} from "react-icons/hi"
 import {TfiSkype} from "react-icons/tfi"
+import Link from "next/link"
+import { BsWhatsapp } from "react-icons/bs"
 
 
 const Contact = () => {
@@ -13,27 +15,25 @@ const Contact = () => {
         <div className="lg:flex lg:justify-between lg:items-center lg:mx-[100px] space-y-9 mx-5">
             <div className="lg:flex lg:flex-col space-y-3">
                 <div className="card lg:w-96 w-full bg-base-100 shadow-xl">
-                <div className="card-body">
-                    <div className="lg:flex lg:justify-start lg:items-center gap-3 flex flex-col items-center">
-                        <div className="lg:flex lg:justify-center lg:items-center flex flex-col items-center gap-1">
-                            <HiOutlineMail className="lg:text-2xl text-4xl"/>
-                            <p className="lg:font-bold font-bold">Email</p>
+                    <div className="card-body">
+                        <div className="lg:flex lg:justify-start lg:items-center gap-3 flex flex-col items-center">
+                            <div className="lg:flex lg:justify-center lg:items-center flex flex-col items-center gap-1">
+                                <BsWhatsapp className="lg:text-2xl text-4xl"/>
+                                <Link href="https://wa.link/bl9mo2" className="lg:font-bold font-bold">Whatsapp</Link>
+                            </div>
                         </div>
-                        <p>www.igeorge.www@gmail.com</p>
                     </div>
-                </div>
                 </div>  
 
                 <div className="card lg:w-96 w-full bg-base-100 shadow-xl">
-                <div className="card-body">
-                    <div className="lg:flex lg:justify-start lg:items-center gap-3 flex flex-col items-center">
-                        <div className="lg:flex lg:justify-center lg:items-center flex flex-col items-center gap-1">
-                            <TfiSkype className="lg:text-2xl text-4xl"/>
-                            <p className="lg:font-bold font-bold">Skype</p>
+                    <div className="card-body">
+                        <div className="lg:flex lg:justify-start lg:items-center gap-3 flex flex-col items-center">
+                            <div className="lg:flex lg:justify-center lg:items-center flex flex-col items-center gap-1">
+                                <TfiSkype className="lg:text-2xl text-4xl"/>
+                                <Link href="https://join.skype.com/invite/AWDlaZJUr22D" className="lg:font-bold font-bold">Skype</Link>
+                            </div>
                         </div>
-                        <p>+2349039462400</p>
                     </div>
-                </div>
                 </div>                        
 
             </div>
@@ -49,7 +49,7 @@ const Contact = () => {
                         <div className="form-control">
                         <input type="email" placeholder="Enter your email" className="input input-bordered" />
                         </div>                        
-                        <textarea className="textarea textarea-bordered lg:min-h-[250px] w-full min-h-[150px]" placeholder="Message"></textarea>
+                        <textarea className="textarea textarea-bordered lg:min-h-[250px] w-full min-h-[130px]" placeholder="Message"></textarea>
                         <div className="">
                             <button className="btn btn-primary gap-2">SEND
                             <SiMinutemailer className="lg:text-2xl" />

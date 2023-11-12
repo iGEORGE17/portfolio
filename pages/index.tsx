@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Hero from '../components/Hero'
-import { FaFacebookF, FaLinkedin, FaTwitter, FaGithub, FaHome, FaFolder, FaSchool, FaTools } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
 import {TbSchool} from 'react-icons/tb'
 import { GrHomeRounded, GrContactInfo, GrFolderOpen } from 'react-icons/gr'
+import {BsTools} from 'react-icons/bs' 
 import Link from 'next/link'
 import Projects from '../components/Projects'
 import Header from '../components/Header'
@@ -39,7 +40,7 @@ export default function Home() {
                 <Link href='#hero' title='Home'><GrHomeRounded className='lg:text-2xl text-primary'/></Link>
               </li>
               <li>
-                <Link href="#about" title='About me'><FaTools className='lg:text-2xl' /></Link>
+                <Link href="#services" title='About me'><BsTools className='lg:text-2xl' /></Link>
               </li>              
               <li>
                 <Link href='#projects' title='Projects'><GrFolderOpen className='lg:text-2xl' /> </Link>
