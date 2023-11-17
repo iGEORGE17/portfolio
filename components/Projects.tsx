@@ -81,8 +81,8 @@ const Projects = () => {
               <div className="lg:flex justify-between items-center flex">
                 <h2 className="card-title">X clone Mobile App</h2>
                 <div className="lg:flex lg:items-center lg:justify-between lg:space-x-3 flex space-x-3">
-                  <Link href="https://github.com/iGEORGE17/random-quote-machine" target="_blank"><FaGithub className="text-2xl" /></Link>
-                  <Link href="https://igeorge17.github.io/random-quote-machine" target="_blank"><FiExternalLink className="lg:text-xl text-2xl" /></Link>
+                  <Link href="https://github.com/iGEORGE17/twitter-Clone" target="_blank"><FaGithub className="text-2xl" /></Link>
+                  <Link href="" target="_blank" onClick={event => event.preventDefault()}><FiExternalLink className="lg:text-xl text-2xl" /></Link>
                 </div>  
                 </div>              
                 <p>a reactnative expo application built with passwordless authentication</p>
