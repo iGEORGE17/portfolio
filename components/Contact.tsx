@@ -3,7 +3,7 @@ import {TfiSkype} from "react-icons/tfi"
 import Link from "next/link"
 import { BsWhatsapp } from "react-icons/bs"
 import Image from "next/image"
-import { useState } from "react"
+import { FormEvent, useState } from "react"
 
 
 const Contact = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault()
         
         const response = await fetch('/api/contact', {
@@ -28,7 +28,16 @@ const Contact = () => {
 
         const result = await response.json()
 
-        console.log(result)
+        if(result) {
+            setFullname("")
+            setEmail("")
+            setMessage("")
+            console.log(result)
+        }
+
+
+
+
     }
 
 
@@ -46,7 +55,7 @@ const Contact = () => {
                             <div className="lg:flex lg:justify-center lg:items-center flex flex-col items-center gap-1">
                                 <BsWhatsapp className="lg:text-2xl text-4xl"/>
                                 <Link href="https://wa.link/bl9mo2" className="lg:font-bold font-bold">Whatsapp</Link>
-                                <Image src="/wa.link_u5p9yv.png" alt="whatsapp qrcode" width="300" height="300" />
+                                <Image src="/wa.link_u5p9yv.png" alt="whatsapp qrcode" width={300} height={300} />
                             </div>
                         </div>
                     </div>
@@ -69,7 +78,7 @@ const Contact = () => {
                 <p className="lg:text-4xl font-bold">Let's talk about your next project</p>
                 </div>
                 <div className="">
-                    <form action="" className="lg:flex lg:flex-col space-y-4" onSubmit={handleSubmit}>
+                    <form className="lg:flex lg:flex-col space-y-4" onSubmit={handleSubmit} method="POST">
                         <div className="form-control">
                         <input type="text" placeholder="Enter your name" name="fullname" className="input input-bordered" 
                         value={fullname}
