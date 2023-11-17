@@ -1,5 +1,4 @@
 import {SiMinutemailer} from "react-icons/si"
-import {HiOutlineMail} from "react-icons/hi"
 import {TfiSkype} from "react-icons/tfi"
 import Link from "next/link"
 import { BsWhatsapp } from "react-icons/bs"
@@ -12,8 +11,24 @@ const Contact = () => {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    const handleSubmit = (e: { preventDefault: () => void }) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault()
+        
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                fullname,
+                email,
+                message
+            })
+        })
+
+        const result = await response.json()
+
+        console.log(result)
     }
 
 

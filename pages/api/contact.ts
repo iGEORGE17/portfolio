@@ -1,15 +1,29 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { transporter, mailOptions } from '../../lib/nodemailer'
+import { transporter } from '../../lib/nodemailer';
 
-type Data = {
-  name: string
+const mail = "www.igeorge.www@gmail.com"
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+
+  const {fullname, email, message} = await req.body();
+
+ const mailOptions = {
+    from: email, // sender address
+    to: mail, 
+    subject: "Enquiries", // subject
+    html: `
+      <p>Hello there!</p>
+      <p>Fullname: ${fullname}</p>
+      <p>Email: ${email}</p>
+      <p>Message: ${message}</p>
+    `   
 }
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
+  await transporter.sendMail(mailOptions)
+  console.log("sent")
 }
 
 
