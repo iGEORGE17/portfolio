@@ -18,11 +18,12 @@ export default async function handler(
     html: `<div>${message}</div>`
    }
 
-  transporter.sendMail(mailOptions, (err: any, info: any) => {
+  await transporter.sendMail(mailOptions, (err: any, info: any) => {
     if(err)
-      console.log(err)
+      console.log({"error ": err})
     else
-      console.log(info)
+    return res.status(200).json(info)
+      console.log({"info": info})
   })
 
 }

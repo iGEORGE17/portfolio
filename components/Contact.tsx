@@ -10,35 +10,26 @@ const Contact = () => {
     const [fullname, setFullname] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+    const [submitted, setSubmitted] = useState(false)
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault()
         
-        const response = await fetch('/api/contact', {
+        await fetch('/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                fullname,
-                email,
-                message
-            })
+            body: JSON.stringify({ fullname, email, message })
+            }).then((res) => {
+                    console.log('Response succeeded!')
+                    setSubmitted(true)
+                    setFullname("")
+                    setEmail("")
+                    setMessage("")
         })
 
-        const result = await response.json()
-
-        if(result) {
-            setFullname("")
-            setEmail("")
-            setMessage("")
-            console.log(result)
-        }
-
-
-
-
-    }
+ }
 
 
   return (
@@ -78,7 +69,7 @@ const Contact = () => {
                 <p className="lg:text-4xl font-bold">Let's talk about your next project</p>
                 </div>
                 <div className="">
-                    <form className="lg:flex lg:flex-col space-y-4" onSubmit={handleSubmit} method="POST">
+                    <form className="lg:flex lg:flex-col space-y-4" onSubmit={handleSubmit}>
                         <div className="form-control">
                         <input type="text" placeholder="Enter your name" name="fullname" className="input input-bordered" 
                         value={fullname}
